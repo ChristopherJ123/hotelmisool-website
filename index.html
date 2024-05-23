@@ -9,115 +9,31 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
-    <style>
-      .material-symbols-outlined {
-        font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
-      }
-
-      .material-symbols-outlined-fill {
-        font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 24;
-        color: #d4a10b;
-      }
-
-      .dot {
-        height: 50px;
-        width: 50px;
-        background-color: white;
-        border-radius: 50%;
-        display: inline-block;
-      }
-
-      body {
-        margin: 0;
-        background-color: #e6e6e6;
-      }
-
-      .header-top-1 {
-        display: flex;
-        align-items: center;
-        flex-direction: row-reverse;
-        background-color: #e6d9c2;
-      }
-
-      .header-top-2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-      }
-
-      .header-top-2-top {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        width: 100%;
-      }
-
-      .header-top-2-bottom {
-        display: grid;
-        grid-template-columns: auto auto auto auto auto auto auto;
-        width: 100%;
-      }
-
-      .container-1-content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-      .container-1-content div {
-        text-align: center;
-      }
-
-      .container-2 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: #d9d9d8;
-      }
-
-      .container-2 h1,
-      .container-2 div {
-        text-align: center;
-      }
-
-      .container-3 {
-        display: flex;
-        height: 600px;
-        gap: 20px;
-      }
-
-      .container-3 div {
-        text-align: center;
-      }
-
-      #tourist-spot-description {
-        text-align: left;
-      }
-
-      .container-4 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: #d9d9d8;
-      }
-
-      .container-4-review {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: #e6e6e6;
-        gap: 10px;
-      }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Uncial+Antiqua&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="responsive.css" />
   </head>
   <body>
     <!-- Isi website -->
 
-    <div class="header">
+    <nav class="header">
       <!-- Header -->
       <div class="header-top-1">
+        <p style="font-family: sans-serif; font-weight: bold">
+          081 - 2352 - 5644
+        </p>
         <div style="display: flex">
           <span class="material-symbols-outlined"> call </span>
         </div>
-        <p>081 - 2352 - 5644</p>
       </div>
 
       <div class="header-top-2">
@@ -127,14 +43,32 @@
           <div
             style="display: flex; flex-direction: column; align-items: center"
           >
-            <div>Misool</div>
-            <div>Hotel</div>
+            <div
+              style="
+                font-size: 3em;
+                text-shadow: 0px 0px 8px #d12929;
+                font-weight: 900;
+                color: #d12929;
+                -webkit-text-stroke-width: 1px;
+                -webkit-text-stroke-color: #991111;
+              "
+            >
+              MISOOL
+            </div>
+            <div
+              class="uncial-antiqua-regular"
+              style="font-size: 2em; color: #d12929"
+            >
+              HOTEL
+            </div>
           </div>
           <div
             style="
               display: flex;
               flex-direction: row-reverse;
               align-items: center;
+              font-size: larger;
+              margin: 20px;
             "
           >
             EN | ID
@@ -143,44 +77,55 @@
 
         <!-- Bottom -->
         <div class="header-top-2-bottom">
-          <div>Home</div>
+          <div id="header-selected">Home</div>
           <div>Rooms</div>
           <div>Facility</div>
           <div>Staff</div>
           <div>Tourist Spot</div>
           <div>Review</div>
-          <div>Get in Touch</div>
+          <div class="getintouch">Get in Touch</div>
         </div>
       </div>
-    </div>
+    </nav>
 
     <div class="content">
       <div class="container-1">
         <img
-          src="https://cdn.discordapp.com/attachments/1238756212175142953/1243100326223937638/IMG-20240506-WA0004.jpg?ex=66503ee5&is=664eed65&hm=c35ca4e88581a07c6eba300a18340ee517996c73a0e313b8c34a06fa8f48763d&"
+          src="https://cdn.discordapp.com/attachments/1238756212175142953/1243117482718527548/IMG-20240506-WA0004.jpg?ex=66504edf&is=664efd5f&hm=98f42895dd4bf7fee0612c2a8f29d15a97f48585b1641ce665d670f08fb03de6&"
           alt=""
           width="100%"
         />
+        <br />
         <div class="container-1-content">
-          <h1>Misool Experience</h1>
-          <div>
+          <div class="container-1-content-title">Misool Experience</div>
+          <br />
+          <hr class="line-break" width="200px" />
+          <br />
+          <div class="container-1-content-description open-sans">
             We are a hotel which pride ourself on not only the facilities that
             we provide, but also our service and affordability. Experience the
             beauty of Misool Island and Raja Ampat through our comfortable and
             affordable hotel
           </div>
           <br />
-          <div>
+          <div class="container-1-content-description open-sans">
             A hotel for every moment rich in emotions, an affordable comfortable
             experience
           </div>
+          <br />
+          <br />
         </div>
       </div>
       <div class="container-2">
-        <h1>Rooms & Suites</h1>
+        <div class="container-2-title">Rooms & Suites</div>
+        <hr class="line-break" width="200px" />
+        <br />
         <div id="room-suites">
-          <h2>Twin Bed Room</h2>
-          <div>Treat yourself to this haven of solitude and comfort</div>
+          <div class="container-2-subtitle">Twin Bed Room</div>
+          <div class="container-2-description">
+            Treat yourself to this haven of solitude and comfort
+          </div>
+          <br />
           <div style="display: flex; align-items: center; gap: 100px">
             <span
               class="dot"
@@ -233,6 +178,7 @@
             alt=""
             width="600px"
             height="400px"
+            style="margin: 40px"
           />
           <span
             class="dot"
@@ -248,8 +194,11 @@
           </span>
         </div>
         <div>
-          <h1>Tourist Spot</h1>
-          <h2 id="tourist-spot-name">Danau Cinta</h2>
+          <div class="container-2-title">Tourist Spot</div>
+          <hr class="line-break" width="200px" />
+          <br />
+          <div id="tourist-spot-name">Danau Cinta</div>
+          <br />
           <div id="tourist-spot-description">
             Misool's Love Lake is a heart-shaped lagoon on Karawapop Island
             (known as 'Dafalen' by locals) that will stay with you forever. With
@@ -262,7 +211,7 @@
       <div class="container-4">
         <h1>Review</h1>
         <h2>What They're Saying</h2>
-        <div style="display: flex; gap: 200px;">
+        <div style="display: flex; gap: 200px">
           <div class="container-4-review">
             <div>
               <span
@@ -384,5 +333,6 @@
         </div>
       </div>
     </div>
+    <script src="app.js"></script>
   </body>
 </html>
