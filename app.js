@@ -12,43 +12,100 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    function menuItemClick() {
+    // Container 1
+    const container_1_slides = document.querySelector('.container-1-slides');
+    const container_1_slideImages = document.querySelectorAll('.container-1-slide');
+    const container_1_leftArrow = document.getElementById('container-1-left-arrow');
+    const container_1_rightArrow = document.getElementById('container-1-right-arrow');
+    let currentIndex1 = 0;
 
+    function updateSlidePosition1() {
+        container_1_slides.style.transform = `translateX(-${currentIndex1 * 100}%)`;
     }
 
-    // Container 1
+    function showNextSlide1() {
+        if (currentIndex1 < container_1_slideImages.length - 1) {
+        currentIndex1++;
+        } else {
+        currentIndex1 = 0;
+        }
+        updateSlidePosition1();
+    }
 
+    function showPrevSlide1() {
+        if (currentIndex1 > 0) {
+        currentIndex1--;
+        } else {
+        currentIndex1 = container_1_slideImages.length - 1;
+        }
+        updateSlidePosition1();
+    }
+
+    container_1_rightArrow.addEventListener('click', showNextSlide1);
+    container_1_leftArrow.addEventListener('click', showPrevSlide1);    
 
 
     // Container 2
-    const slides = document.querySelector('.container-2-slides');
-    const slideImages = document.querySelectorAll('.container-2-slide');
-    const leftArrow = document.getElementById('container-2-left-arrow');
-    const rightArrow = document.getElementById('container-2-right-arrow');
-    let currentIndex = 0;
+    const container_2_slides = document.querySelector('.container-2-slides');
+    const container_2_slideImages = document.querySelectorAll('.container-2-slide');
+    const container_2_leftArrow = document.getElementById('container-2-left-arrow');
+    const container_2_rightArrow = document.getElementById('container-2-right-arrow');
+    let currentIndex2 = 0;
 
-    function updateSlidePosition() {
-        slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+    function updateSlidePosition2() {
+        container_2_slides.style.transform = `translateX(-${currentIndex2 * 100}%)`;
     }
 
-    function showNextSlide() {
-        if (currentIndex < slideImages.length - 1) {
-        currentIndex++;
+    function showNextSlide2() {
+        if (currentIndex2 < container_2_slideImages.length - 1) {
+        currentIndex2++;
         } else {
-        currentIndex = 0;
+        currentIndex2 = 0;
         }
-        updateSlidePosition();
+        updateSlidePosition2();
     }
 
-    function showPrevSlide() {
-        if (currentIndex > 0) {
-        currentIndex--;
+    function showPrevSlide2() {
+        if (currentIndex2 > 0) {
+        currentIndex2--;
         } else {
-        currentIndex = slideImages.length - 1;
+        currentIndex2 = container_2_slideImages.length - 1;
         }
-        updateSlidePosition();
+        updateSlidePosition2();
     }
 
-    rightArrow.addEventListener('click', showNextSlide);
-    leftArrow.addEventListener('click', showPrevSlide);    
+    container_2_rightArrow.addEventListener('click', showNextSlide2);
+    container_2_leftArrow.addEventListener('click', showPrevSlide2);
+
+    // Container 2
+    const container_3_slides = document.querySelector('.container-3-slides');
+    const container_3_slideImages = document.querySelectorAll('.container-3-slide');
+    const container_3_leftArrow = document.getElementById('container-3-left-arrow');
+    const container_3_rightArrow = document.getElementById('container-3-right-arrow');
+    let currentIndex3 = 0;
+
+    function updateSlidePosition3() {
+        container_3_slides.style.transform = `translateX(-${currentIndex3 * 100}%)`;
+    }
+
+    function showNextSlide3() {
+        if (currentIndex3 < container_3_slideImages.length - 1) {
+        currentIndex3++;
+        } else {
+        currentIndex3 = 0;
+        }
+        updateSlidePosition3();
+    }
+
+    function showPrevSlide3() {
+        if (currentIndex3 > 0) {
+        currentIndex3--;
+        } else {
+        currentIndex3 = container_3_slideImages.length - 1;
+        }
+        updateSlidePosition3();
+    }
+
+    container_3_rightArrow.addEventListener('click', showNextSlide3);
+    container_3_leftArrow.addEventListener('click', showPrevSlide3);
 });

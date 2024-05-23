@@ -90,11 +90,31 @@
 
     <div class="content">
       <div class="container-1">
-        <img
-          src="https://cdn.discordapp.com/attachments/1238756212175142953/1243117482718527548/IMG-20240506-WA0004.jpg?ex=66504edf&is=664efd5f&hm=98f42895dd4bf7fee0612c2a8f29d15a97f48585b1641ce665d670f08fb03de6&"
-          alt=""
-          width="100%"
-        />
+        <div style="display: flex; position: relative">
+          <div class="container-1-slides">
+            <img
+              src="https://cdn.discordapp.com/attachments/1238756212175142953/1243117482718527548/IMG-20240506-WA0004.jpg?ex=66504edf&is=664efd5f&hm=98f42895dd4bf7fee0612c2a8f29d15a97f48585b1641ce665d670f08fb03de6&"
+              alt="Room 1"
+              class="container-1-slide"
+            />
+            <img
+              src="https://fakeimg.pl/1000x540?text=Image2"
+              alt="Room 2"
+              class="container-1-slide"
+            />
+            <img
+              src="https://fakeimg.pl/1000x540?text=Image3"
+              alt="Room 3"
+              class="container-1-slide"
+            />
+          </div>
+          <span id="container-1-left-arrow" class="arrow dot">
+            <span class="material-symbols-outlined"> arrow_back_ios </span>
+          </span>
+          <span id="container-1-right-arrow" class="arrow dot">
+            <span class="material-symbols-outlined"> arrow_forward_ios </span>
+          </span>
+        </div>
         <br />
         <div class="container-1-content">
           <div class="container-1-content-title">Misool Experience</div>
@@ -139,58 +159,42 @@
                 class="container-2-slide"
               />
             </div>
-            <span id="container-2-left-arrow" class="arrow left-arrow">
+            <span id="container-2-left-arrow" class="arrow dot">
               <span class="material-symbols-outlined"> arrow_back_ios </span>
             </span>
-            <span id="container-2-right-arrow" class="arrow right-arrow">
+            <span id="container-2-right-arrow" class="arrow dot">
               <span class="material-symbols-outlined"> arrow_forward_ios </span>
             </span>
           </div>
         </div>
       </div>
       <div class="container-3">
-        <div
-          style="
-            display: flex;
-            position: relative;
-            flex-direction: row;
-            align-items: center;
-          "
-        >
-          <span
-            class="dot"
-            style="
-              display: flex;
-              position: absolute;
-              left: 10px;
-              justify-content: center;
-              align-items: center;
-            "
-          >
+        <div class="container-3-slider">
+          <div class="container-3-slides">
+            <img
+              src="https://fakeimg.pl/800x600?text=Image1"
+              alt="Room 1"
+              class="container-3-slide"
+            />
+            <img
+              src="https://fakeimg.pl/600x400?text=Image2"
+              alt="Room 2"
+              class="container-3-slide"
+            />
+            <img
+              src="https://fakeimg.pl/600x400?text=Image3"
+              alt="Room 3"
+              class="container-3-slide"
+            />
+          </div>
+          <span id="container-3-left-arrow" class="arrow dot">
             <span class="material-symbols-outlined"> arrow_back_ios </span>
           </span>
-          <img
-            id="tourist-spot-image"
-            src="https://fakeimg.pl/600x400"
-            alt=""
-            width="600px"
-            height="400px"
-            style="margin: 40px"
-          />
-          <span
-            class="dot"
-            style="
-              display: flex;
-              position: absolute;
-              right: 10px;
-              justify-content: center;
-              align-items: center;
-            "
-          >
+          <span id="container-3-right-arrow" class="arrow dot">
             <span class="material-symbols-outlined"> arrow_forward_ios </span>
           </span>
         </div>
-        <div>
+        <div class="container-3-content">
           <div class="container-2-title">Tourist Spot</div>
           <hr class="line-break" width="200px" />
           <br />
