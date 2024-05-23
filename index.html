@@ -4,7 +4,7 @@
     <!-- Konfigurasi website -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Misool</title>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
@@ -117,40 +117,35 @@
         </div>
       </div>
       <div class="container-2">
-        <div class="container-2-title">Rooms & Suites</div>
-        <hr class="line-break" width="200px" />
-        <br />
+        <h1>Rooms & Suites</h1>
         <div id="room-suites">
-          <div class="container-2-subtitle">Twin Bed Room</div>
-          <div class="container-2-description">
-            Treat yourself to this haven of solitude and comfort
-          </div>
-          <br />
-          <div style="display: flex; align-items: center; gap: 100px">
-            <span
-              class="dot"
-              style="
-                display: flex;
-                justify-content: center;
-                align-items: center;
-              "
-            >
+          <h2>Twin Bed Room</h2>
+          <div>Treat yourself to this haven of solitude and comfort</div>
+          <div class="container-2-slider">
+            <div class="container-2-slides">
+              <img
+                src="https://fakeimg.pl/600x400?text=Image1"
+                alt="Room 1"
+                class="container-2-slide"
+              />
+              <img
+                src="https://fakeimg.pl/600x400?text=Image2"
+                alt="Room 2"
+                class="container-2-slide"
+              />
+              <img
+                src="https://fakeimg.pl/600x400?text=Image3"
+                alt="Room 3"
+                class="container-2-slide"
+              />
+            </div>
+            <span id="container-2-left-arrow" class="arrow left-arrow">
               <span class="material-symbols-outlined"> arrow_back_ios </span>
             </span>
-            <img src="https://fakeimg.pl/600x400" alt="" />
-            <span
-              class="dot"
-              style="
-                display: flex;
-                justify-content: center;
-                align-items: center;
-              "
-            >
+            <span id="container-2-right-arrow" class="arrow right-arrow">
               <span class="material-symbols-outlined"> arrow_forward_ios </span>
             </span>
           </div>
-          <br>
-          <br>
         </div>
       </div>
       <div class="container-3">
@@ -211,8 +206,12 @@
         </div>
       </div>
       <div class="container-4">
-        <h1>Review</h1>
-        <h2>What They're Saying</h2>
+        <div class="container-2-title">Review</div>
+        <hr class="line-break" width="200px" />
+        <br />
+        <div style="font-size: 2em">What They're Saying</div>
+        <br />
+        <br />
         <div style="display: flex; gap: 200px">
           <div class="container-4-review">
             <div>
@@ -242,36 +241,53 @@
                 star
               </span>
             </div>
-            <div>Lowest Price, but Great Quality</div>
-            <div
-              style="
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-                background-color: white;
-              "
-            >
-              <div style="display: flex">
+            <div class="review-title">Lowest Price, but Great Quality</div>
+            <div class="review-container">
+              <div class="review-header">
                 <img
                   src="https://lh3.googleusercontent.com/a-/ALV-UjXEPWqzgTBbaPDt7jVnsNOpo_snuRPzdacSr4kTtlY0INVi5JU=s40-c-rp-mo-br100"
                   alt="pp1"
                 />
                 <div style="display: flex; flex-direction: column">
                   <div>Cinta Cantika</div>
-                  <div>1 review · 1 photo</div>
+                  <div style="color: gray">1 review · 1 photo</div>
                 </div>
               </div>
-              <div style="display: flex">
+              <div style="display: flex; gap: 8px">
                 <div>5/5</div>
-                <br />
-                <div>2 weeks ago on Google</div>
+                <div style="color: gray">
+                  2 weeks ago on
+                  <img
+                    style="
+                      height: 14px;
+                      margin: -2px 2px 0 2px;
+                      vertical-align: middle;
+                      width: 14px;
+                    "
+                    src="https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png"
+                  />
+                  Google
+                </div>
               </div>
               <div style="display: flex; flex-wrap: wrap; max-width: 300px">
                 The rooms are clean, cool, comfortable... Lowest price but great
                 quality …
               </div>
             </div>
-            <div>Review taken from google maps</div>
+            <a
+              href="https://www.google.com/travel/hotels/entity/CgoIuIfjvbGWg59xEAE/reviews?ts=CAESCAoCCAMKAggDGiAKAhoAEhoSFAoHCOgPEAUYGxIHCOgPEAUYHBgBMgIQACoJCgU6A0lEUhoA&qs=CAE4CEIJCVf4ucQuw8DOQgkJuMO4F7MMPnFaTDJKqgFHEAEqECIMaG90ZWwgbWlzb29sKCYyHxABIhsWRWSZ4qIFdioEeOva1siPkpZaPBsjFyr9UqsyEBACIgxob3RlbCBtaXNvb2w&utm_campaign=sharing&utm_medium=link_btn&utm_source=htls&ap=MAA"
+            >
+              <img
+                src="assets/img/maps-logo.png"
+                alt="google-maps"
+                width="100px"
+              />
+            </a>
+            <div style="font-family: 'CooperBT'">
+              Review taken from
+              <b style="color: rgb(27 165 235)">google </b>
+              <b style="color: #4be467">maps</b>
+            </div>
           </div>
           <div class="container-4-review">
             <div>
@@ -301,38 +317,57 @@
                 star
               </span>
             </div>
-            <div>Lowest Price, but Great Quality</div>
-            <div
-              style="
-                display: flex;
-                flex-direction: column;
-                width: 100%;
-                background-color: white;
-              "
-            >
-              <div style="display: flex">
+            <div class="review-title">Lowest Price, but Great Quality</div>
+            <div class="review-container">
+              <div class="review-header">
                 <img
-                  src="https://lh3.googleusercontent.com/a-/ALV-UjXEPWqzgTBbaPDt7jVnsNOpo_snuRPzdacSr4kTtlY0INVi5JU=s40-c-rp-mo-br100"
+                  src="https://lh3.googleusercontent.com/a-/ALV-UjViompN9IdvmwYFoXNnT_UIdjf8QaHeUlvEu2Zt4b3aMapJF_KEGg=w75-h75-p-rp-mo-ba3-br100"
                   alt="pp1"
                 />
                 <div style="display: flex; flex-direction: column">
-                  <div>Cinta Cantika</div>
-                  <div>1 review · 1 photo</div>
+                  <div>曹美華</div>
+                  <div style="color: gray">8 review · 114 photo</div>
                 </div>
               </div>
-              <div style="display: flex">
+              <div style="display: flex; gap: 8px">
                 <div>5/5</div>
-                <br />
-                <div>2 weeks ago on Google</div>
+                <div style="color: gray">
+                  11 months ago on
+                  <img
+                    style="
+                      height: 14px;
+                      margin: -2px 2px 0 2px;
+                      vertical-align: middle;
+                      width: 14px;
+                    "
+                    src="https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png"
+                  />
+                  Google
+                </div>
               </div>
               <div style="display: flex; flex-wrap: wrap; max-width: 300px">
-                The rooms are clean, cool, comfortable... Lowest price but great
-                quality …
+                Very clean nice quiet homestay. With hot shower, air
+                conditioning and close to street of many fine foods.
               </div>
             </div>
-            <div>Review taken from google maps</div>
+            <a
+              href="https://www.google.com/travel/hotels/entity/CgoIuIfjvbGWg59xEAE/reviews?ts=CAESCAoCCAMKAggDGiAKAhoAEhoSFAoHCOgPEAUYGxIHCOgPEAUYHBgBMgIQACoJCgU6A0lEUhoA&qs=CAE4CEIJCVf4ucQuw8DOQgkJuMO4F7MMPnFaTDJKqgFHEAEqECIMaG90ZWwgbWlzb29sKCYyHxABIhsWRWSZ4qIFdioEeOva1siPkpZaPBsjFyr9UqsyEBACIgxob3RlbCBtaXNvb2w&utm_campaign=sharing&utm_medium=link_btn&utm_source=htls&ap=MAA"
+            >
+              <img
+                src="assets/img/maps-logo.png"
+                alt="google-maps"
+                width="100px"
+              />
+            </a>
+            <div style="font-family: 'CooperBT'">
+              Review taken from
+              <b style="color: rgb(27 165 235)">google </b>
+              <b style="color: #4be467">maps</b>
+            </div>
           </div>
         </div>
+        <br />
+        <br />
       </div>
     </div>
     <script src="app.js"></script>
