@@ -129,6 +129,8 @@ document.addEventListener('DOMContentLoaded', function() {
     function updateSize() {
         if (window.innerWidth > 800) {
             menu.style.display = 'grid';
+        } else {
+            menu.style.display = 'none';
         }
     }
 
