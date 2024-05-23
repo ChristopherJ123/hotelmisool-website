@@ -4,12 +4,37 @@
         grid-template-columns: auto auto auto auto auto auto auto;
         gap: 40px;
     }
+
+    .container-4-reviews {
+        gap: 100px;
+    }
 }
 
 @media screen and (max-width:800px) {
+    .header-top-2-middle {
+        display: flex;
+    }
+
+    .header-top-2-bottom-container {
+        min-height: 100px;
+    }
+
     .header-top-2-bottom {
-        display: grid;
+        display: none;
         grid-template-columns: auto;
         gap: 10px;
+    }
+
+    .container-3 {
+        flex-direction: column;
+    }
+
+    .container-3-content {
+        max-width: 100%;
+    }
+
+    .container-4-reviews {
+        flex-direction: column;
+        gap: 80px;
     }
 }

@@ -108,4 +108,30 @@ document.addEventListener('DOMContentLoaded', function() {
 
     container_3_rightArrow.addEventListener('click', showNextSlide3);
     container_3_leftArrow.addEventListener('click', showPrevSlide3);
+
+    const drpdwnmenu = document.getElementById('dropDownMenu');
+    const menu = document.querySelector('.header-top-2-bottom');
+
+    drpdwnmenu.addEventListener('click', (event) => {
+        if (menu.style.display === 'grid') {
+            console.log('set to none');
+            menu.style.display = 'none';
+        } else {
+            menu.style.display = 'grid';
+            console.log('set to grid');
+        }
+    })
+
+    const height = document.querySelector("#height span");
+    const width = document.querySelector("#width span");
+
+    // Function to update height and width
+    function updateSize() {
+        if (window.innerWidth > 800) {
+            menu.style.display = 'grid';
+        }
+    }
+
+    // Add event listener for window resize
+    window.addEventListener('resize', updateSize);
 });
