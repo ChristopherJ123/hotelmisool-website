@@ -74,31 +74,41 @@
             EN | ID
           </div>
         </div>
-
-        <!-- Bottom -->
-        <div class="header-top-2-bottom-container">
-          <!-- Mobile only -->
-          <div class="header-top-2-middle">
-            <span
-              id="dropDownMenu"
-              class="material-symbols-outlined"
-              style="margin: 20px"
-            >
-              menu
-            </span>
-          </div>
-          <div class="header-top-2-bottom">
-            <div>Home</div>
-            <div>Rooms</div>
-            <div>Facility</div>
-            <div>Staff</div>
-            <div>Tourist Spot</div>
-            <div>Review</div>
-            <div class="getintouch">Get in Touch</div>
-          </div>
-        </div>
       </div>
     </nav>
+
+    <div
+      style="
+        display: flex;
+        position: sticky;
+        justify-content: center;
+        background-color: white;
+        top: 0;
+        z-index: 2;
+      "
+    >
+      <!-- Mobile only -->
+      <div class="header-top-2-middle">
+        <span
+          id="dropDownMenu"
+          class="material-symbols-outlined"
+          style="padding: 20px"
+        >
+          menu
+        </span>
+      </div>
+      <div class="header-sticky">
+        <div data-target="#home-section">Home</div>
+        <div data-target="#rooms-section">Rooms</div>
+        <div data-target="#facility-section">Facility</div>
+        <div data-target="#staff-section">Staff</div>
+        <div data-target="#tourist-spot-section">Tourist Spot</div>
+        <div data-target="#review-section">Review</div>
+        <div data-target="#get-in-touch-section" class="getintouch">
+          Get in Touch
+        </div>
+      </div>
+    </div>
 
     <div class="content">
       <div class="container-1">
@@ -128,7 +138,7 @@
           </span>
         </div>
         <br />
-        <div class="container-1-content">
+        <div id="home-section" class="container-1-content">
           <div class="container-1-content-title">Misool Experience</div>
           <br />
           <hr class="line-break" width="200px" />
@@ -148,28 +158,27 @@
           <br />
         </div>
       </div>
-      <div class="container-2">
+      <div id="rooms-section" class="container-2">
         <div class="container-2-content-title">Rooms & Suites</div>
         <hr class="line-break" width="200px" />
-        <div style="font-size: 2em">Twin Bed Room</div>
-        <div style="font-size: 1.5em">
+        <div class="container-2-content-subtitle" style="font-size: 2em">
+          Twin Bed Room
+        </div>
+        <div class="container-2-content-description" style="font-size: 1.5em">
           Treat yourself to this haven of solitude and comfort
         </div>
         <div class="container-2-slider">
           <div class="container-2-slides">
             <img
+              width="600px"
+              height="400px"
               src="https://fakeimg.pl/600x400?text=Image1"
               alt="Room 1"
               class="container-2-slide"
             />
             <img
-              src="https://fakeimg.pl/600x400?text=Image2"
+              src="assets/img/twin-bedroom.png"
               alt="Room 2"
-              class="container-2-slide"
-            />
-            <img
-              src="https://fakeimg.pl/600x400?text=Image3"
-              alt="Room 3"
               class="container-2-slide"
             />
           </div>
@@ -180,8 +189,11 @@
             <span class="material-symbols-outlined"> arrow_forward_ios </span>
           </span>
         </div>
+        <br />
+        <div style="font-size: 2em">Rp. 400,000 / Day</div>
+        <br />
       </div>
-      <div class="container-3">
+      <div id="tourist-spot-section" class="container-3">
         <div class="container-3-slider">
           <div class="container-3-slides">
             <img
@@ -222,7 +234,7 @@
           </div>
         </div>
       </div>
-      <div class="container-4">
+      <div id="review-section" class="container-4">
         <div class="container-2-title">Review</div>
         <hr class="line-break" width="200px" />
         <br />

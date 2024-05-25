@@ -1,28 +1,30 @@
-@media screen and (max-width:1000px) {
-    .header-top-2-bottom {
+@media screen and (max-width:1200px) {
+    .header-sticky {
         display: grid;
         grid-template-columns: auto auto auto auto auto auto auto;
         gap: 40px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .header-sticky {
+        display: none;
+        grid-template-columns: auto;
+        gap: 10px;
     }
 
     .container-4-reviews {
         gap: 100px;
     }
-}
 
-@media screen and (max-width:800px) {
     .header-top-2-middle {
         display: flex;
     }
+}
 
+@media screen and (max-width:800px) {
     .header-top-2-bottom-container {
         min-height: 70px;
-    }
-
-    .header-top-2-bottom {
-        display: none;
-        grid-template-columns: auto;
-        gap: 10px;
     }
 
     .container-3 {

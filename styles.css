@@ -35,6 +35,21 @@
     border-radius: 0.5rem; 
 }
 
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px)
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0)
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
 body {
     font-family: "CooperBT";
     margin: 0;
@@ -51,6 +66,8 @@ body {
 
 .header-top-2 {
     display: flex;
+    position: sticky;
+    top: 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -89,6 +106,13 @@ body {
     margin: 20px;
 }
 
+#dropDownMenu {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100%;
+    background-color: white;
+}
+
 .header-top-2-bottom div {
     display: flex;
     justify-content: center;
@@ -99,13 +123,31 @@ body {
     width: 100%;
 }
 
-.header-top-2-bottom div.getintouch {
+.getintouch {
     color: white;
     background-color: #DD3E3E;
     border-radius: 2rem; 
 }
+
+.header-sticky {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    justify-items: center;
+    gap: 70px;
+    padding: 40px;
+}
+
+.header-sticky div {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+    font-size: larger;
+    width: 100%;
+}
   
-.header-top-2-bottom div::after {
+.header-sticky div::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -118,16 +160,16 @@ body {
     transition: transform 0.3s ease;
 }
   
-.header-top-2-bottom div.active::after {
+.header-sticky div.active::after {
     transform: scaleX(1);
 }
 
-.header-top-2-bottom div:hover {
+.header-sticky div:hover {
     cursor: pointer;
     color: gray;
 }
 
-.header-top-2-bottom div.getintouch:hover {
+.header-sticky div.getintouch:hover {
     cursor: pointer;
     color: lightgray;
 }
@@ -230,6 +272,7 @@ body {
 }
 
 .container-2-slides img {
+    height: 100%;
     width: 100%;
 }
   
