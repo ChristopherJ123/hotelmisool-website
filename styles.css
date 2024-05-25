@@ -201,6 +201,7 @@ body {
 
 .container-1-slides img {
     width: 100%;
+    max-height: 1000px;
 }
   
 .container-1-slide {

@@ -160,10 +160,40 @@ document.addEventListener('DOMContentLoaded', function() {
     const container_3_slideImages = document.querySelectorAll('.container-3-slide');
     const container_3_leftArrow = document.getElementById('container-3-left-arrow');
     const container_3_rightArrow = document.getElementById('container-3-right-arrow');
+    const container_3_title = document.getElementById('tourist-spot-name')
+    const container_3_description = document.getElementById('tourist-spot-description')
     let currentIndex3 = 0;
 
     function updateSlidePosition3() {
         container_3_slides.style.transform = `translateX(-${currentIndex3 * 100}%)`;
+        if (currentIndex3 == 0) {
+            container_3_title.innerHTML = 'Danau Cinta';
+            container_3_description.innerHTML = "Misool's Love Lake is a heart-shaped lagoon on Karawapop Island (known as 'Dafalen' by locals) that will stay with you forever. With more spectacular views from its peak, Karawapop lagoon is a primal wonderland to watch Raja Ampat nature at its finest. Marvel as you journey into the heart of Misool, literally.";
+            container_3_title.classList.remove('fade-in');
+            container_3_description.classList.remove('fade-in');
+            void container_3_title.offsetWidth;
+            void container_3_description.offsetWidth;
+            container_3_title.classList.add('fade-in');
+            container_3_description.classList.add('fade-in');
+        } else if (currentIndex3 == 1) {
+            container_3_title.innerHTML = 'Piaynemo';
+            container_3_description.innerHTML = "Piaynemo is a beautiful and majestic sight comprised of numerous islands as well as karts islands sticking out of the gemstone-colored sea.  It is a popular place where visitors preserve their memories of Raja Ampat—how could they not? Piaynemo boasts one of the most iconic views of Raja Ampat. Experience great wonder at the beautiful and majestic side of papua and Raja Ampat in Piaynemo.";
+            container_3_title.classList.remove('fade-in');
+            container_3_description.classList.remove('fade-in');
+            void container_3_title.offsetWidth;
+            void container_3_description.offsetWidth;
+            container_3_title.classList.add('fade-in');
+            container_3_description.classList.add('fade-in');
+        } else if (currentIndex3 == 2) {
+            container_3_title.innerHTML = 'Kali biru';
+            container_3_description.innerHTML = "Kali biru or Cerulean River is a wonderful place filled with a beautiful and captivating view of it's crystal clear turquoise water and stunning marine life. Located amidst the pristine archipelago of Raja Ampat in West Papua, Indonesia, Kali biru offers a serene and picturesque escape for nature lovers and adventure seekers. Experience the tranquil ambiance and stunning scenery that  makes Kali biru a must-visit destination for those exploring the wonders of Raja Ampat.";
+            container_3_title.classList.remove('fade-in');
+            container_3_description.classList.remove('fade-in');
+            void container_3_title.offsetWidth;
+            void container_3_description.offsetWidth;
+            container_3_title.classList.add('fade-in');
+            container_3_description.classList.add('fade-in');
+        }
     }
 
     function showNextSlide3() {
