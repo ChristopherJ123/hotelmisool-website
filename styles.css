@@ -131,7 +131,7 @@ body {
 
 .header-sticky {
     display: grid;
-    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto auto;
     justify-items: center;
     gap: 70px;
     padding: 40px;
